@@ -24,12 +24,12 @@ const Skills = () => {
               <div key={index} className='bg-dark-300 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 cursor-pointer'>
                  <div className='flex items-center mb-4'>
                   <skills.icon className='w-12 h-12 text-purple mr-6'/>
-                  <h3 className='text-xl font-semibold'>{skills.title}</h3>
+                  <h3 className='text-white text-xl font-semibold'>{skills.title}</h3>
                  </div>
-                     <p className='text-gray-400 mb-4'>
+                     <p className='text-gray-300 mb-4'>
                       {skills.description}
                      </p>
-                     <div className='flex flex-wrap gap-2'>
+                     <div className='text-white flex flex-wrap gap-2'>
                       {skills.tags.map((tech)=>(
                         <span key={tech} className='px-3 py-1 bg-dark-300 rounded-full text-sm'>{tech}</span>
                       ))}

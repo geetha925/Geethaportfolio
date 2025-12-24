@@ -16,20 +16,29 @@
 }
 
 
-.typewriter{
-  overflow: hidden;
-  border-right: 0.15em solid #8B5CF6;
+.typewriter {
+  /* on small screens show full text without caret */
   white-space: nowrap;
-  width: 0;
-  animation: typing  3s steps(20,end) forwards,blink-caret 0.75s step-end 4;
+  overflow: visible;
+  width: auto;
+  border-right: none;
 }
 
-@keyframes typing{
-  from {width: 0;}
-  to {width: 19ch;}
-}
+@media (min-width: 768px) {
+  .typewriter {
+    border-right: 0.15em solid #8B5CF6;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(20, end) forwards, blink-caret 0.75s step-end 4;
+  }
 
-@keyframes blink-caret{
-  from, to{border-color: transparent;}
-  50% {border-color: #8B5CF6;}
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 19ch; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #8B5CF6; }
+  }
 }

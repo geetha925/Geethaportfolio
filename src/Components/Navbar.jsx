@@ -1,8 +1,7 @@
-import { FaXmark,FaBars } from 'react-icons/fa6'
-import React,{useState} from 'react'
-import { div } from 'framer-motion/client';
+import { FaXmark, FaBars } from 'react-icons/fa6'
+import React, { useState } from 'react'
 const Navbar = () => {
-  const [showMenu, setshowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <nav className='fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg'>
@@ -14,43 +13,39 @@ const Navbar = () => {
           
            </a>
         </div>
-         <div className='hidden md:flex space-x-10 '>
-               <a href="#home" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Home</span>
-                <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
-                </a>
+           <div className='hidden md:flex space-x-10 '>
+             <a href="#home" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+              <span>Home</span>
+              <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
+              </a>
 
-                <a href="#Aboutme" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>About</span>
-                <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
-                </a>
+              <a href="#about" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+              <span>About</span>
+              <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
+              </a>
 
-                <a href="#skills" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Skills</span>
-                <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
-                </a>
+              <a href="#skills" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+              <span>Skills</span>
+              <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
+              </a>
 
-                <a href="#projects" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Projects</span>
-                <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
-                </a>
+              <a href="#projects" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+              <span>Projects</span>
+              <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
+              </a>
 
-               
-
-                <a href="#contact" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Contact</span>
-                <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
-                </a>
-         </div>
+              <a href="#contact" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+              <span>Contact</span>
+              <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
+              </a>
+           </div>
     {/*mobile*/}  
       <div className='md:hidden'>
-        {
-          showMenu?
-          <FaBars onClick={()=>setshowMenu(!showMenu)} className='text-2xl cursor-pointer'/>:
-          <FaXmark onClick={()=>setshowMenu(!showMenu)} className='text-2xl cursor-pointer' />
-        }
-         
-         
+        {showMenu ? (
+          <FaXmark onClick={() => setShowMenu(false)} className='text-2xl cursor-pointer text-white' />
+        ) : (
+          <FaBars onClick={() => setShowMenu(true)} className='text-2xl cursor-pointer text-white' />
+        )}
       </div>
 
         </div>
@@ -58,41 +53,15 @@ const Navbar = () => {
 
 
       {/*mobile menu  */}
-       {
-        showMenu &&(
+       {showMenu && (
           <div className='md:hidden mt-4 bg-dark-300 h-screen rounded-lg p-4 flex flex-col space-y-4 text-center justify-center'>
-             <a onClick={()=>setshowMenu(!showMenu)}  href="#home" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Home</span>
-           
-                </a>
-
-                <a onClick={()=>setshowMenu(!showMenu)}  href="#about" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>About</span>
-                
-                </a>
-
-                <a onClick={()=>setshowMenu(!showMenu)}  href="#skills" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Skills</span>
-                
-                </a>
-
-                <a onClick={()=>setshowMenu(!showMenu)}  href="#project" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Projects</span>
-               
-                </a>
-
-                <a onClick={()=>setshowMenu(!showMenu)}  href="#experience" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Experience</span>
-                
-                </a>
-
-                <a onClick={()=>setshowMenu(!showMenu)}  href="#contact" className='relative text-white/80 transition duration-300 hover:text-purple group'>
-                <span>Contact</span>
-                
-                </a>
+            <a onClick={() => setShowMenu(false)} href="#home" className='text-white/80 transition duration-300 hover:text-purple'>Home</a>
+            <a onClick={() => setShowMenu(false)} href="#about" className='text-white/80 transition duration-300 hover:text-purple'>About</a>
+            <a onClick={() => setShowMenu(false)} href="#skills" className='text-white/80 transition duration-300 hover:text-purple'>Skills</a>
+            <a onClick={() => setShowMenu(false)} href="#projects" className='text-white/80 transition duration-300 hover:text-purple'>Projects</a>
+            <a onClick={() => setShowMenu(false)} href="#contact" className='text-white/80 transition duration-300 hover:text-purple'>Contact</a>
           </div>
-        )
-       }
+        )}
 
     </nav>
   )

@@ -13,13 +13,13 @@ const Hero = () => {
     >
       <div className='container mx-auto px-8 flex flex-col items-center justify-center text-center'>
          <div className='max-w-4xl'>
-         <h1 className='text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-gray-100'>
-               Hi,I'm <span className='text-purple'>Geetha Tarlana</span>
-         </h1>
- 
-         <h2 className='text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold mb-6 typewriter text-white'>
-          Full Stack Developer
-         </h2>
+             <h1 className='text-3xl sm:text-4xl md:text-6xl font-bold mb-2 text-gray-100'>
+               Hi, I'm <span className='text-purple'>Geetha Tarlana</span>
+             </h1>
+
+             <h2 className='text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold mb-6 typewriter text-white'>
+              Full Stack Developer
+             </h2>
          <p className='text-lg text-gray-300 mb-8 max-w-2xl mx-auto'>I create stunning web Experience with modern technologies and innovative design.</p>
 
          <div className='flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4'>

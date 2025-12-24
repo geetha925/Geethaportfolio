@@ -18,8 +18,8 @@ const Projects = () => {
           ))}
         </div>
         <div className='flex justify-between items-center'>
-          <a href="#" className='px-4 py-2 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300 text-white'>Demo</a>
-          <a href="#" className='px-4 py-2 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300 text-white'>Code</a>
+          <a href={demo} target="_blank" rel="noopener noreferrer" className='px-4 py-2 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300 text-white'>Demo</a>
+          <a href={code} target="_blank" rel="noopener noreferrer" className='px-4 py-2 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300 text-white'>Code</a>
         </div>
       </div>
     </div>

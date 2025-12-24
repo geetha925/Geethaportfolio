@@ -59,21 +59,15 @@ const Contact = () => {
                 <FaEnvelope className='text-purple text-xl mr-4' />
                 <div>
                   <p className='text-white font-medium'>Email</p>
-                  <p className='text-gray-400'>geetha@example.com</p>
+                  <p className='text-gray-400'>geethatarlana29@gmail.com</p>
                 </div>
               </div>
-              <div className='flex items-center'>
-                <FaPhone className='text-purple text-xl mr-4' />
-                <div>
-                  <p className='text-white font-medium'>Phone</p>
-                  <p className='text-gray-400'>+1 (555) 123-4567</p>
-                </div>
-              </div>
+              
               <div className='flex items-center'>
                 <FaMapMarkerAlt className='text-purple text-xl mr-4' />
                 <div>
                   <p className='text-white font-medium'>Location</p>
-                  <p className='text-gray-400'>Your City, Country</p>
+                  <p className='text-gray-400'>Hyderabad, India</p>
                 </div>
               </div>
             </div>

@@ -1,12 +1,12 @@
-import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
+import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
 
-import profileImg from '../assets/profile.avif';
-import projectImg1 from '../assets/project1.avif';
-import projectImg2 from '../assets/project2.avif';
-import projectImg3 from '../assets/project3.avif';
-import projectImg4 from '../assets/project4.avif';
-import projectImg5 from '../assets/project5.avif';
-import projectImg6 from '../assets/project6.avif';
+import profileImg from './profile.avif';
+import projectImg1 from './project1.avif';
+import projectImg2 from './project2.avif';
+import projectImg3 from './project3.avif';
+import projectImg4 from './project4.avif';
+import projectImg5 from './project5.avif';
+import projectImg6 from './project6.avif';
 
 
 export const assets = {
@@ -15,25 +15,35 @@ export const assets = {
 
 
 export const aboutInfo = [
-    {
-      icon: FaLightbulb,
-      title: 'Innovative',
-      description: 'I love creating unique solutions to complex problems with cutting-edge technologies.',
-      color: 'text-purple'
-    },
-    {
-      icon: FaPaintBrush,
-      title: 'Design Oriented',
-      description: 'Beautiful design and user experience are at the heart of everything I create.',
-      color: 'text-pink'
-    },
-    {
-      icon: FaCode,
-      title: 'Clean Code',
-      description: 'I write maintainable, efficient code following best practices and modern patterns.',
-      color: 'text-blue'
-    }
-  ];
+  {
+    icon: FaServer,
+    title: 'Full-Stack Thinking',
+    description:
+      'I design features end-to-end, from React UI to Node.js APIs and MongoDB data models, not just isolated screens.',
+     color: 'text-blue'
+  },
+  {
+    icon: FaLightbulb,
+    title: 'Problem Solver',
+    description:
+      'I break down real problems, debug systematically, and build solutions that work in practice—not just in demos.',
+    color: 'text-purple'
+  },
+  {
+    icon: FaPaintBrush,
+    title: 'Design-Focused UI',
+    description:
+      'I build responsive, user-friendly interfaces where layout, spacing, and usability matter as much as functionality.',
+    color: 'text-pink'
+  },
+  {
+    icon: FaCode,
+    title: 'Clean & Scalable Code',
+    description:
+      'I write readable, maintainable code using modern MERN best practices so projects are easy to extend and scale.',
+    color: 'text-blue'
+  }
+];
 
 
 
@@ -105,7 +115,7 @@ export const projects = [
     description: "A full-featured online store with shopping cart, user authentication, and payment processing.",
     image: projectImg1,
     tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
+    icons: [FaReact, FaNodeJs, FaDatabase, FaCode],
     demo: "#",
     code: "#",
   },
@@ -114,7 +124,7 @@ export const projects = [
     description: "A productivity application with drag-and-drop functionality and real-time updates.",
     image: projectImg2,
     tech: ["Vue.js", "Firebase", "Tailwind CSS", "WebSockets"],
-    icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
+    icons: [FaCode, FaFire, FaCloud, FaDatabase],
     demo: "#",
     code: "#",
   },
@@ -128,20 +138,20 @@ export const projects = [
     code: "#",
   },
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
+    title: "Food Website",
+    description: "A fully responsive food website designed for seamless browsing across mobile, tablet, and desktop .",
     image: projectImg4,
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Markdown"],
+    tech: ["HTML", "CSS"],
     icons: [FaReact, FaCloud],
-    demo: "#",
-    code: "#",
+    demo: "https://foodmunchgeetha.ccbp.tech/",
+    code: "https://github.com/geetha925/foodmunch",
   },
   {
     title: "Netflix UI Clone",
-    description: "A responsive Netflix UI clone replicating the core layout, styling, and browsing experience across devicesA real-time chat application with group messaging, emojis, and file sharing.",
-    image: Project,
-    tech: ["HTML", "CSS",],
-    icons: [FaReact, FaNodeJs, FaDatabase ],
+    description: "A responsive Netflix UI clone replicating the core layout, styling, and browsing experience across devices.",
+    image: projectImg5,
+    tech: ["HTML", "CSS"],
+    icons: [FaReact, FaNodeJs, FaDatabase],
     demo: "https://movieclonee.ccbp.tech/",
     code: "https://github.com/geetha925/movie_appuiclone",
   },
