@@ -39,40 +39,61 @@ export const aboutInfo = [
 
 export const skills = [
   {
-    title: 'Frontend Development',
+    title: "Frontend Development",
     icon: FaReact,
-    description: 'Building responsive and interactive user interfaces with modern frameworks.',
-    tags: ['React', 'Vue.js', 'Angular', 'TypeScript']
+    description: "Building responsive and interactive user interfaces using modern frontend technologies.",
+    tags: [
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "JavaScript (ES6+)",
+      "React.js"
+    ]
   },
   {
-    title: 'Backend Development',
+    title: "Backend Development",
     icon: FaServer,
-    description: 'Creating robust server-side applications and RESTful APIs.',
-    tags: ['Node.js', 'Express', 'Django', 'Laravel']
+    description: "Developing RESTful APIs with authentication and server-side logic.",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "JWT Authentication"
+    ]
   },
   {
-    title: 'Database Management',
+    title: "Database Management",
     icon: FaDatabase,
-    description: 'Designing and optimizing databases for performance and scalability.',
-    tags: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase']
+    description: "Designing and managing databases for application data storage.",
+    tags: [
+      "MongoDB",
+      "SQL",
+      "CRUD Operations"
+    ]
   },
   {
-    title: 'Mobile Development',
-    icon: FaMobileAlt,
-    description: 'Building cross-platform mobile applications with modern tools.',
-    tags: ['React Native', 'Flutter', 'Ionic', 'Swift']
-  },
-  {
-    title: 'Cloud & DevOps',
+    title: "Automation & APIs",
     icon: FaCloud,
-    description: 'Deploying and managing applications in cloud environments.',
-    tags: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
+    description: "Building automation workflows and integrating third-party APIs.",
+    tags: [
+      "n8n",
+      "Webhooks",
+      "API Integration",
+      "Workflow Automation"
+    ]
   },
   {
-    title: 'Tools & Technologies',
+    title: "Tools & Technologies",
     icon: FaTools,
-    description: 'Essential tools and technologies I use in my development workflow.',
-    tags: ['Git & GitHub', 'Webpack', 'Figma', 'Jest']
+    description: "Tools I use for development, testing, and collaboration.",
+    tags: [
+      "Git",
+      "GitHub",
+      "Postman",
+      "VS Code",
+      "Docker"
+    
+    ]
   }
 ];
 
@@ -116,13 +137,13 @@ export const projects = [
     code: "#",
   },
   {
-    title: "Chat App",
-    description: "A real-time chat application with group messaging, emojis, and file sharing.",
-    image: projectImg5,
-    tech: ["Socket.IO", "React", "Node.js", "MongoDB"],
+    title: "Netflix UI Clone",
+    description: "A responsive Netflix UI clone replicating the core layout, styling, and browsing experience across devicesA real-time chat application with group messaging, emojis, and file sharing.",
+    image: Project,
+    tech: ["HTML", "CSS",],
     icons: [FaReact, FaNodeJs, FaDatabase ],
-    demo: "#",
-    code: "#",
+    demo: "https://movieclonee.ccbp.tech/",
+    code: "https://github.com/geetha925/movie_appuiclone",
   },
   {
     title: "AI Image Generator",
