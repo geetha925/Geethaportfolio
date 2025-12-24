@@ -19,7 +19,7 @@ const Navbar = () => {
               <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
               </a>
 
-              <a href="#about" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+              <a href="#Aboutme" className='relative text-white/80 transition duration-300 hover:text-purple group'>
               <span>About</span>
               <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full '></span>
               </a>
