@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { projects } from '../assets/assets'
 import { FaArrowRight } from 'react-icons/fa'
@@ -6,7 +6,7 @@ import { FaArrowRight } from 'react-icons/fa'
 const Projects = () => {
   const ProjectCard = ({ title, description, image, tech, icons, demo, code }) => (
     <div className='bg-dark-300 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300'>
-      <img src={image} alt={title} className='w-full h-48 object-cover' />
+      <img src={image} alt={title} className='w-full h-48 object-cover' loading="lazy" />
       <div className='p-6'>
         <h3 className='text-xl font-semibold mb-2 text-white'>{title}</h3>
         <p className='text-gray-400 mb-4'>{description}</p>
@@ -24,6 +24,15 @@ const Projects = () => {
       </div>
     </div>
   );
+
+  const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' ? window.innerWidth < 768 : false);
+
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth < 768);
+    onResize();
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
 
   return (
     <motion.div 
